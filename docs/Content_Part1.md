@@ -1,9 +1,9 @@
 ---
 layout: default
 title: History of GIS
-parent: Lecture Content
+parent: Module 1
 has_children: true
-nav_order: 1
+nav_order: 2
 ---
 
 

@@ -2,7 +2,7 @@
 layout: default
 title: Proliferation of GIS
 parent: History of GIS
-grand_parent: Lecture Content
+grand_parent: Module 1
 nav_order: 6
 ---
 

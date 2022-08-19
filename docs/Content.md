@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Lecture Content
-# parent: Module 1
+title: What is GIS?
+parent: Module 1
 has_children: true
 # grand_parent: Modules
-nav_order: 2
+nav_order: 1
 ---
 
 

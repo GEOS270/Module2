@@ -2,7 +2,7 @@
 layout: default
 title: References
 parent: History of GIS
-grand_parent: Lecture Content
+grand_parent: Module 1
 nav_order: 7
 ---
 

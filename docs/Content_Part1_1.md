@@ -2,20 +2,11 @@
 layout: default
 title: History of Cartography & Surveying
 parent: History of GIS
-grand_parent: Lecture Content
+grand_parent: Module 1
 nav_order: 1
 ---
-<!-- 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
----
- -->
+
+
 # Evolution of Cartography
 
 The earliest maps presented diverse and abstract representations of reality.  They used very different medium than we do today today, and are sometimes quite difficult to see as maps today.  

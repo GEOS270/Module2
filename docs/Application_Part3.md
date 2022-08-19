@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Foundations of Epidemiology
-parent: Lab Application
+parent: Lab Assignment
 has_children: True
 nav_order: 3
 ---

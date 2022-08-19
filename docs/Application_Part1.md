@@ -1,9 +1,9 @@
 ---
 layout: default
 title: ArcGIS Pro Tutorial
-parent: Lab Application
+parent: Lab Assignment
 # has_children: True
-nav_order: 1
+nav_order: 2
 ---
 
 # ArcGIS Pro Tutorial

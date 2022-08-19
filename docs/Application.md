@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Lab Application
-# parent: Module 1
+title: Lab Assignment
 has_children: True
-nav_order: 3
+nav_order: 1
 ---
 
+# Lab Assignment
+
+This lab has 3 parts to it.
+
+<!-- 
 # Getting Started with ArcGIS Pro
 
 In this lab, you will work through a couple tutorials that will help you get your bearings using the ArcGIS Pro software package and gain familiarity with some basic aspects of GIS.
@@ -18,4 +22,4 @@ In this lab, you will work through a couple tutorials that will help you get you
 
 ## Accessing ArcGIS Pro
 
-See the [Lab Access page](https://june-skeeter.github.io/GEOS270_Syllabus_2022_S1/docs/Labs.html) of the Syllabus.  To opne ArcPro from a lab computer or once you have it installed on your own system, you can find it using the Windows start tab or search bar.  
+See the [Lab Access page](https://june-skeeter.github.io/GEOS270_Syllabus_2022_S1/docs/Labs.html) of the Syllabus.  To opne ArcPro from a lab computer or once you have it installed on your own system, you can find it using the Windows start tab or search bar.   -->
