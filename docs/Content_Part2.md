@@ -17,12 +17,3 @@ A Coordinate Reference System (CRS) is *a coordinate-based system used to locate
   <figcaption><a href="https://postgis.net/workshops/postgis-intro/geography.html">Cartesian versus spherical, or geographic, coordinates.</a> <a href="https://postgis.net/">PostGIS.</a> </figcaption>
 </figure>
 
----
-
-# Why all world maps are wrong
-
-This video gives a quick overview of some of the issues associated with making two dimensional maps of our three dimensional world.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIID5FDi2JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-

@@ -2,7 +2,7 @@
 layout: default
 title: Module Quiz
 # parent: Module 1
-nav_order: 4
+nav_order: 3
 ---
 
 # Module 1 Quiz
@@ -44,7 +44,7 @@ Maps will be evaluated for completeness following the rubric below.  Later in te
 ## Redlining
 
 [**1)**](/docs/Application_Part1.md)
-In your own words, describe what the practice of redlining was and discuss some of its long lasting impacts?
+In your own words, describe what a map projection is.  Why do we use them and why are they all wrong?
 
 ## ArcGIS Pro Tutorial
 

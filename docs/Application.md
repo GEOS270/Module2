@@ -2,18 +2,18 @@
 layout: default
 title: Lab Assignment
 has_children: True
-nav_order: 1
+nav_order: 2
 ---
 
 # Lab Assignment
 
 This lab has 3 parts to it.
 
-## 1) Redlining video
+## 1) Map Projections Video
 
-Watch the video discussing redlining to learn about a key example of the misuse of GIS from history.
+Watch the video discussing map projections for a quick overview of why they are important.
 
-* dDescribe the practice of redlining in your own words
+* Describe the what a map projection is and why it is important in your own words.
 
 ## 2) ArcGIS Pro Tutorial
 
