@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- <meta charset="utf-8"> -->
+
   <title>Reveal.js template</title>
   <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
 
@@ -16,17 +18,32 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+
+
+    <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
+
+
+  <!-- <title>Reveal.js template</title>
+  <meta name="description" content="Simple Reveal.js slidedeck template. Source files loaded from jsDelivr.">
+  <meta name="author" content="jitesh@spinspire.com">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css">
-  <!-- see https://cdnjs.com/libraries/reveal.js/3.6.0 for what's available -->
-  <!-- examples: simple, beige, black, blood, league, moon, night, serif, sky, solarized, white ... -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/beige.css" id="theme">
-  <!-- see: https://cdnjs.com/libraries/highlight.js/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css"> -->
 
   <!-- Printing and PDF exports -->
   <script>
     // Load print, pdf stylesheets from jsDelivr
-    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/';
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
@@ -70,7 +87,7 @@
            </div>
           <div class="col" style="text-align: Right;">
           <p><img src="images/timeline.png"  height="500" width="500"></p>
-           </div>
+          </div>
       </section>
 
 
@@ -198,7 +215,6 @@
            </div>
        </section>
 
-
        <section>
         <h3>Advent of Surveying</h3>
         <div class="container">
@@ -214,8 +230,6 @@
           </div>
       </section> 
 
-
-
      <section>
       <h3>Systematic Data Collection</h3>
       <!-- <div class="container"> -->
@@ -227,17 +241,18 @@
     </section> 
 
 
-       <section>
-        <h3>Advent of Surveying</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p> Systematic measuring and recording of angles and distances leads to development of geometry and trigonometry.</p>
-            <p>-Maps became more accurate buy they were limited to small areas.</p>
-          </div>
-          <div class="col" style="text-align: Right;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8C6IbJJ-mhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-      </section> 
+    <section>
+      <h3>Advent of Surveying</h3>
+      <div class="container">
+        <div class="col" style="text-align: Left;">
+        <p> Systematic measuring and recording of angles and distances leads to development of geometry and trigonometry.</p>
+          <p>-Maps became more accurate buy they were limited to small areas.</p>
+        </div>
+        <div class="col" style="text-align: Right;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8C6IbJJ-mhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section> 
 
        <section>
         <h3>Urban Planning</h3>
@@ -344,10 +359,33 @@
     </div><!-- .slides -->
 
   </div><!-- .reveal -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
 
-  <!-- not needed since 3.8.0 -->
-  <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"><script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      overview: false,
+      loop: false,
+      margin: 0.03,
+      width: 1300,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2 ]
+    },
+
+
+    );
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
   <script>
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
@@ -371,7 +409,7 @@
         { src: srcUrlPrefix + 'plugin/notes/notes.js', async: true }
       ]
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

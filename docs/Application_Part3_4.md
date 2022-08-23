@@ -3,7 +3,7 @@ layout: default
 title: Making a Map
 parent: Foundations of Epidemiology
 grand_parent: Lab Assignment
-nav_order: 4
+nav_order: 5
 ---
 
 # Making a Map

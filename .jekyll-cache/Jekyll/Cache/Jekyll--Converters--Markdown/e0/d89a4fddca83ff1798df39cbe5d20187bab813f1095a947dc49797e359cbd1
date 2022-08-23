@@ -1,0 +1,118 @@
+I"E<h1 id="lab-assignment">Lab Assignment</h1>
+
+<p>This lab has 3 parts to it.</p>
+
+<h2 id="1-redlining-video">1) Redlining video</h2>
+
+<p>Watch the video discussing redlining to learn about a key example of the misuse of GIS from history.</p>
+
+<ul>
+  <li>Write an short essay describing the practice of redlining.</li>
+</ul>
+
+<h2 id="2-arcgis-pro-tutorial">2) ArcGIS Pro Tutorial</h2>
+
+<p>Work through some tutorial materials put together by ESRI to gain some familiarity with using ArcGIS Pro.  You will make your first map and submit it for credit.</p>
+
+<h2 id="3-foundations-of-epidemiology">3) Foundations of Epidemiology</h2>
+
+<p>Apply some modern GIS methods to a famous example of spatial analysis from history.</p>
+
+<h1 id="lab-quiz">Lab Quiz</h1>
+
+<p>You can submit your answers to these questions via the Module 1 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the lab if you need help finding answers.</p>
+
+<h2 id="rubrics">Rubrics</h2>
+
+<h3 id="written-answers">Written Answers</h3>
+
+<p>Written answers should be brief but they should adequately answer the question.  Bullet point format is sufficient unless otherwise specified.  All written answers will be evaluated following this general rubric.</p>
+
+<ul>
+  <li>Scores &amp; categories are general guides, you TA may assign scores between these levels</li>
+  <li>Your TA will provide brief comments where applicable, if you need more feedback you can follow up with your TA.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Score</th>
+      <th>Category</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0%</td>
+      <td>Missing</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>Insufficient</td>
+      <td>Minimal effort, missing major key points, or serious logical flaws</td>
+    </tr>
+    <tr>
+      <td>60%</td>
+      <td>Below Expectations</td>
+      <td>Missing a few key points or minor logical flaws</td>
+    </tr>
+    <tr>
+      <td>80%</td>
+      <td>Met Expectations</td>
+      <td>Hits key points and mostly well constructed</td>
+    </tr>
+    <tr>
+      <td>100%</td>
+      <td>Exceeds Expectations</td>
+      <td>Clearly thought out, concise, and astute</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="maps">Maps</h3>
+
+<p>Maps and file uploads will be evaluated for completeness following the rubric below.  Later in term, maps will be evaluated for correctness and cartography.  For now, as long as you can make a map with the necessary elements, you’ll get full credit!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Score</th>
+      <th>Category</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0%</td>
+      <td>Missing</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>50%</td>
+      <td>Incomplete</td>
+      <td>Did not follow instructions, missing key elements</td>
+    </tr>
+    <tr>
+      <td>100%</td>
+      <td>Complete</td>
+      <td>Successfully made a map with required components</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 
+# Getting Started with ArcGIS Pro
+
+In this lab, you will work through a couple tutorials that will help you get your bearings using the ArcGIS Pro software package and gain familiarity with some basic aspects of GIS.
+
+**1)**{: .label .label-blue } Complete the ArcGIS Pro Tutorial to make your first map!  Then watch a few videos to gain familiarity with some other aspects of the application.
+
+**2)**{: .label .label-blue } Work though a tutorial on coordinate reference systems.  You will learn how to determine the coordinate system maps and layers in ArcGIS Pro projects.  You will also learn how to reproject layers by assigning new projections.  Lastly, you will compare a few projections and see how choice of projection can effect a calculation of population density.  
+
+**3)**{: .label .label-blue } You will recreate an example from history using modern geospatial analysis methods.  Dr. John Snow was the first person to prove that Cholera was a waterborne pathogen.  He used manual surveying, a paper map, and rudimentary geospatial analysis to identify a well as the source of a Cholera out break in London.  You will apply a modern method known as [kernel density](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/kernel-density.htm) to recreate this analysis and see if you can find the well that caused the outbreak.
+
+## Accessing ArcGIS Pro
+
+See the [Lab Access page](https://june-skeeter.github.io/GEOS270_Syllabus_2022_S1/docs/Labs.html) of the Syllabus.  To opne ArcPro from a lab computer or once you have it installed on your own system, you can find it using the Windows start tab or search bar.   -->
+:ET

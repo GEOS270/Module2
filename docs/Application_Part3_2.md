@@ -3,7 +3,7 @@ layout: default
 title: Adjusting Symbology
 parent: Foundations of Epidemiology
 grand_parent: Lab Assignment
-nav_order: 2
+nav_order: 3
 ---
 
 

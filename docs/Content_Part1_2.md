@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Early Exploration & Cartography
-parent: History of GIS
+parent: History of GISd
 grand_parent: Module 1
 nav_order: 2
 ---

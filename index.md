@@ -12,6 +12,7 @@ nav_order: 1
 
 This module will cover three general topics and will be delivered over two weeks.  It is intended to give a broad overview of the discipline and get you started with using GIS
 
+<!-- 
 ### History of GIS
 
 * First maps & surveys
@@ -36,9 +37,10 @@ This module will cover three general topics and will be delivered over two weeks
 * Set the scale of your map
 * Brief overview of digitizing and georeferencing
 * Introduction to spatial analysis
-* Create and share a map
+* Create and share a map -->
 
 
-## Deliverables
+<!-- ## Deliverables
 
 Every module has a corresponding canvas submission that will be scored out of 100 pts.  See the [assessment pages](docs/Assessment.md).
+ -->

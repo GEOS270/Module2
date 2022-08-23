@@ -3,7 +3,7 @@ layout: default
 title: Spatial Analysis
 parent: Foundations of Epidemiology
 grand_parent: Lab Assignment
-nav_order: 3
+nav_order: 4
 ---
 
 # Spatial Analysis

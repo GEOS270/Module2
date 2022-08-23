@@ -9,17 +9,23 @@ nav_order: 1
 
 This lab has 3 parts to it.
 
-<!-- 
-# Getting Started with ArcGIS Pro
+## 1) Redlining video
 
-In this lab, you will work through a couple tutorials that will help you get your bearings using the ArcGIS Pro software package and gain familiarity with some basic aspects of GIS.
+Watch the video discussing redlining to learn about a key example of the misuse of GIS from history.
 
-**1)**{: .label .label-blue } Complete the ArcGIS Pro Tutorial to make your first map!  Then watch a few videos to gain familiarity with some other aspects of the application.
+* dDescribe the practice of redlining in your own words
 
-**2)**{: .label .label-blue } Work though a tutorial on coordinate reference systems.  You will learn how to determine the coordinate system maps and layers in ArcGIS Pro projects.  You will also learn how to reproject layers by assigning new projections.  Lastly, you will compare a few projections and see how choice of projection can effect a calculation of population density.  
+## 2) ArcGIS Pro Tutorial
 
-**3)**{: .label .label-blue } You will recreate an example from history using modern geospatial analysis methods.  Dr. John Snow was the first person to prove that Cholera was a waterborne pathogen.  He used manual surveying, a paper map, and rudimentary geospatial analysis to identify a well as the source of a Cholera out break in London.  You will apply a modern method known as [kernel density](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/kernel-density.htm) to recreate this analysis and see if you can find the well that caused the outbreak.
+Work through some tutorial materials put together by ESRI to gain some familiarity with using ArcGIS Pro.  
 
-## Accessing ArcGIS Pro
+* Complete the ArcGIS Pro Tutorial to make your first map!
+* Then watch a few videos to gain familiarity with some other aspects of the application.
 
-See the [Lab Access page](https://june-skeeter.github.io/GEOS270_Syllabus_2022_S1/docs/Labs.html) of the Syllabus.  To opne ArcPro from a lab computer or once you have it installed on your own system, you can find it using the Windows start tab or search bar.   -->
+
+## 3) Foundations of Epidemiology
+
+You will recreate an example from history using modern geospatial analysis methods.  Dr. John Snow was the first person to prove that Cholera was a waterborne pathogen.  He used manual surveying, a paper map, and rudimentary geospatial analysis to identify a well as the source of a Cholera out break in London.
+
+* You will apply a modern method known as [kernel density](https://pro.arcgis.com/en/pro-app/2.8/tool-reference/spatial-analyst/kernel-density.htm) to recreate this analysis and see if you can find the well that caused the outbreak.
+

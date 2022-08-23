@@ -2,7 +2,7 @@
 layout: default
 title: What is GIS?
 parent: Module 1
-has_children: true
+# has_children: true
 # grand_parent: Modules
 nav_order: 1
 ---
@@ -20,10 +20,23 @@ The science and study of geospatial information: GIScience is a framework we use
 
 Any system or tool we use to store and analyze geospatial information can broadly be considered a GISystem.  Until a the late 20th century, atlases and library map catalogues were our most advanced GIS.  Now we have a wide range of computer and web based GISystems.  Ranging from the "desktop" GIS applications like ArcGIS Pro that you will be using to cloud computing systems that can Terabytes of planetary scale data.
 
+## What can be done with GIS?
+
+GIS can be used to help solve a wide range of geographic problems in different fields: 
+
+* Epidemiology/Public Health
+* Planning (Urban, Hazards)
+* Conservation & Resource Management
+* Ecology/Biology
+* Economics
+* Climate Science.
+
 ---
 
-# What can be done with GIS?
+# TopHat Test
 
-A GIS can be used to help solve a wide range of geographic problems in different fields: Epidemiology/Public Health, Planning (Urban, Hazards), Conservation & Resource Management, Ecology/Biology, Economics, and Climate Science.
+## Q1
+
+
 
 

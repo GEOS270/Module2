@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Foundations of Epidemiology
-parent: History of GIS
-grand_parent: Module 1
-nav_order: 3
+title: Foundations of Epidemiologyd
+parent: Foundations of Epidemiologyd
+grand_parent: Lab Ass
+nav_order: 4
 ---
 
 <details open markdown="block">
