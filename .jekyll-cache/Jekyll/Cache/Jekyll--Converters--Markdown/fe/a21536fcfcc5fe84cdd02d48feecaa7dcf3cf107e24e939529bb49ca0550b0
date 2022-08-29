@@ -1,0 +1,30 @@
+I"<h1 id="coordinate-reference-systems">Coordinate Reference Systems</h1>
+
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+
+<p>This module is intended to give a broad overview of the discipline and get you started with using GIS software.</p>
+
+<p>Some of the things you can expect from this module:</p>
+
+<ul>
+  <li>Steps of Abstraction: 3D Earth »&gt; 2D Map</li>
+  <li>Local vs. Datums</li>
+  <li>Geographic Coordinate Systems</li>
+  <li>Projected Coordinate Systems</li>
+  <li>Map Scale</li>
+</ul>
+
+<!-- 
+### History of GIS
+
+
+### Coordinate Reference Systems
+
+### Introduction to ArcGIS Pro (Lab Weeks 1 & 2)
+ -->
+
+<!-- ## Deliverables
+
+Every module has a corresponding canvas submission that will be scored out of 100 pts.  See the [assessment pages](docs/Assessment.md).
+ -->
+:ET
