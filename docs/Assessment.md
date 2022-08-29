@@ -5,9 +5,9 @@ title: Module Quiz
 nav_order: 3
 ---
 
-# Module 1 Quiz
+# Module 2 Quiz
 
-You can submit your answers to these questions via the Module 1 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the lab if you need help finding answers.
+You can submit your answers to these questions via the Module 2 Quiz on Canvas.  Questions are listed here with hyperlinks to the relevant section of the lab if you need help finding answers.
 
 ## Rubrics
 
@@ -41,9 +41,68 @@ Maps will be evaluated for completeness following the rubric below.  Later in te
 
 # Quiz Questions 
 
-## Redlining
+## Part 1: Map Projections Tutorials
 
-[**1)**](/docs/Application_Part1.md)
+### Exercise 1
+
+[**1)**](https://ubc-library-rc.github.io/map-projections/content/exercise1-discover-coord.html#inspecting-the-metadata) Metadata is _____ about ____.
+
+
+### Exercise 2
+
+[**2)**](https://ubc-library-rc.github.io/map-projections/content/exercise2-transform.html#exercise-2-projecting-on-the-fly) In your own words, what does Project “On the Fly” do?
+
+
+### Exercise 3
+
+[**3)**](https://ubc-library-rc.github.io/map-projections/content/exercise3-project.html#exercise-3-project-your-data) What UTM zone is Vancouver in?
+
+* 10 S
+* 11 N
+* 10 N
+* 18 N
+
+[**4)**] Use the [What UTM Zone am I in?](https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-#) tool to match find the UTM zones for these cities:
+
+
+### Exercise 4
+
+[**5)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#inspect-the-attribute-tables) What spatial unit is the Shape_Area of the CAN_albersEA in? (hint check the Spatial Reference Info).
+
+* Kilometers
+* Meters
+* Square Miles
+* Square Kilometers
+* Square Meters
+* Degrees
+
+
+[**6)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#inspect-the-attribute-tables) What is the difference in Shape_Area given for the CAN_webMercator and CAN_albersEA layers in **Square Kilometers**?  Round to the nearest whole number.
+
+<!-- 41,118,591 +- 100 -->
+
+
+[**7)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#calculating-population-density)  We are multiplying by 1000000 to convert the units to population per square ____.
+
+<!-- Kilometer -->
+
+[**8)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#calculating-population-density) What is the population density of the **CAN_webMercator** layer? Round your answer to the nearest hundredth place.
+
+<!-- 0.72433603 -->
+
+[**9)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#calculating-population-density) What is the population density of the **CAN_albersEA** layer? Round your answer to the nearest hundredth place.
+
+<!-- 3.71718812 -->
+
+[**10)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#calculating-population-density) How do the calculations compare?  Which layer do you think has the most accurate Population Density and why?
+
+
+## Part 2: Comparing the Projections
+
+[**11)**](https://ubc-library-rc.github.io/map-projections/content/exercise4-pop-density.html#calculating-population-density) 
+
+
+<!-- [**1)**](/docs/Application_Part1.md)
 In your own words, describe what a map projection is.  Why do we use them and why are they all wrong?
 
 ## ArcGIS Pro Tutorial
@@ -117,7 +176,7 @@ What do the mean center and directional distribution tell us about a set of poin
 Why might Kernel Density be more useful for identifying the source of a source(s) of a cholera outbreak outbreak than the mean center and directional distribution?
 
 [**14)**](https://june-skeeter.github.io/Module1_GEOS270/docs/Application_Part3_4.html)
-Upload your *Kernel_Density.pdf*.
+Upload your *Kernel_Density.pdf*. -->
 
 
 <!-- 

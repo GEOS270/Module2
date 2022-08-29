@@ -1,7 +1,7 @@
-title: Module 1
+title: Module 2
 remote_theme: pmarsceill/just-the-docs
 search_enabled: true
-github_repo_url: "https://geos270.github.io/Module1/"
+github_repo_url: "https://geos270.github.io/Module2/"
 
 # Enable or disable heading anchors
 heading_anchors: true
@@ -10,7 +10,7 @@ aux_links:
   "Course Schedule":
     - "https://geos270.github.io/Syllabus/#course-schedule"
   "View on github":
-    - "https://github.com/GEOS270/Module1"
+    - "https://github.com/GEOS270/Module2"
 
 # license information for workshop content
 license_name: "Creative Commons Attribution 4.0 International License"

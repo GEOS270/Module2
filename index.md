@@ -1,27 +1,18 @@
 ---
 layout: default
-title: Module 1
+title: Module 2
 # parent: Modules
 has_children: True
 nav_order: 1
 ---
 
-# History of GIS, Coordinate Reference Systems & Introduction to ArcGIS Pro
+# Coordinate Reference Systems
 
 ## Learning Outcomes
 
-This module will cover three general topics and will be delivered over two weeks.  It is intended to give a broad overview of the discipline and get you started with using GIS
+This module is intended to give a broad overview of the discipline and get you started with using GIS software.
 
-<!-- 
-### History of GIS
-
-* First maps & surveys
-* Exploration and expansion - maps and colonialism
-* Development of atlases (first spatial databases)
-* Development of map projections and spatial analysis methods
-* Historical wrongs in GIS
-
-### Coordinate Reference Systems
+Some of the things you can expect from this module:
 
 * Steps of Abstraction: 3D Earth >>> 2D Map
 * Local vs. Datums
@@ -29,15 +20,15 @@ This module will cover three general topics and will be delivered over two weeks
 * Projected Coordinate Systems
 * Map Scale
 
-### Introduction to ArcGIS Pro (Lab Weeks 1 & 2)
 
-* Get your bearings with ArcGSI Pro software package
-* Determine a layer's Coordinate Reference System
-* Investigate the impacts of Coordinate Reference System on analysis
-* Set the scale of your map
-* Brief overview of digitizing and georeferencing
-* Introduction to spatial analysis
-* Create and share a map -->
+<!-- 
+### History of GIS
+
+
+### Coordinate Reference Systems
+
+### Introduction to ArcGIS Pro (Lab Weeks 1 & 2)
+ -->
 
 
 <!-- ## Deliverables
