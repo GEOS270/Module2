@@ -1,0 +1,33 @@
+I"<h1 id="comparing-coordinate-systems">Comparing Coordinate Systems</h1>
+
+<p>Create a figure showing Canada displayed using four different coordinate systems.  Your submission should look something like the figure below, you can reference the video for help setting things up.</p>
+
+<p>The key components you need for full credit are:</p>
+
+<ul>
+  <li>Four maps on one sheet showing Canada displayed using the following coordinate systems:
+    <ul>
+      <li>WGS 1984</li>
+      <li>Web Mercator</li>
+      <li>Canada Lambert Conformal Conic</li>
+      <li>Canada Albers Equal Area</li>
+    </ul>
+  </li>
+  <li>Your name &amp; date created</li>
+  <li>Map scale shown in <strong>two</strong> ways on each map
+    <ul>
+      <li>Scale text</li>
+      <li>Scale bar</li>
+    </ul>
+  </li>
+  <li>A graticule showing lines of Latitude and Longitude
+    <ul>
+      <li>Use the same spacing (15 degrees) for each map</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="content/images/Coordinate_System_Comparison.png" width="500" style="border:1px solid black" /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-q41WmnzboQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET
