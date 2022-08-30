@@ -2,7 +2,7 @@
 layout: default
 title: Projected Coordinate Systems
 parent: Coordinate Reference Systems
-grand_parent: Module 2
+# grand_parent: Module 2
 nav_order: 2
 ---
 

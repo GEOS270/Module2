@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- <meta charset="utf-8"> -->
+
   <title>Reveal.js template</title>
   <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
 
@@ -13,20 +15,15 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css">
-  <!-- see https://cdnjs.com/libraries/reveal.js/3.6.0 for what's available -->
-  <!-- examples: simple, beige, black, blood, league, moon, night, serif, sky, solarized, white ... -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/beige.css" id="theme">
-  <!-- see: https://cdnjs.com/libraries/highlight.js/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
 
   <!-- Printing and PDF exports -->
   <script>
     // Load print, pdf stylesheets from jsDelivr
-    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/';
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
@@ -35,21 +32,154 @@
   </script>
 
   <!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
     <![endif]-->
   <style>
-    body {
-      /* make it totally black */
-      background-color: black;
-    }
+    
+.container {
+  position: fixed;
+    height: 700px;
+    width: 100%;
+}
 
-    .container {
-      display: flex;
-    }
+.title{
+  position: relative;
+  top: 5%;
+}
 
-    .col {
-      flex: 1
-    }
+.subtitle{
+  position: relative;
+  top: 10%;
+}
+
+.question{
+  position: relative;
+  text-align: left;
+  top: 10%;
+}
+
+
+.header {
+  top: 1%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+}
+
+.full {
+  width: 95%;
+  top:  12%;
+  left: 0%;
+  text-align: left;
+  position: absolute; 
+}
+
+.left {
+  width: 49%;
+  height: 80%;
+  top: 12%;
+  left: 0%;
+  position: absolute;
+  text-align: left;
+}
+
+.right {
+  width: 49%;
+  top: 12%;
+  height: 80%;
+  left: 51%;
+  position: absolute;
+  text-align: left;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.figure {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+  /* white-space: nowrap; */
+}
+
+
+h1 {
+  display: block;
+  font-size: 3em !important; 
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+  
+h2 {
+  display: block;
+  font-size: 1.5em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.reveal a {
+  color: blue;
+}
+
+.reveal {
+  background-color: #e6f9fc;
+}
+
+ul {
+    padding-left: 0;
+    font-size: 90%;
+
+} 
+
+ol {
+  counter-reset: item;
+  font-size: 90%;
+  padding-left: 0;
+}
+
+li.nl {
+  display: block;
+}
+
+li.nl:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+ol ol li.nl::before {
+    content: counters(item, ".") " ";
+}
+
+#main img {
+    float: left;
+}
+
+.col {
+    flex: 1
+}
+
+
   </style>
 </head>
 
@@ -58,309 +188,499 @@
   <div class="reveal">
 
     <div class="slides">
-
-       <section>
-        <h2>Flattening the Blue Marble</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>This is what earth looks like when you take a picture of it from 29,000 kilometers away.  This is the original <a href="https://en.wikipedia.org/wiki/The_Blue_Marble"> Blue Marble</a> photo, taken from Apollo 17.</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/blue_marble_og.jpg" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h2>Earth</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Multiple distortions from idealized sphere:</p>
-          <p class="fragment fade-out">-Topography</p> 
-          <p class="fragment shrink">-Gravity Differentials</p>
-          <p class="fragment grow">-Centrifugal Force</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/shape.jpg" width="600"></p>
-           </div>
-      </section>
-
-       <section>
-        <h2>Ignore Topography!?</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <!-- <p><img src="images/geoid_2.png" width="600"></p> -->
-          <p>In most applications, topography isn't explicitly needed.</p>
-          <p>- We can account for it separately if necessary using digital elevation models or contour lines.</p>
-           </div>
-      </section>
-
-
-       <section>
-        <h2>Digital Elevation Model</h2>
-        <div class="container">
-          <div class="col">
-          <p><img src="images/DEM.png" width="1000"></p>
-           </div>
-      </section>
-
-      
-       <section>
-        <h2>Contour Lines</h2>
-        <div class="container">
-          <div class="col">
-          <p><img src="images/contour lines.png" width="1000"></p>
-           </div>
-      </section>
-
-       <section>
-        <h2>Geoid</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Simplification of Earth:</p>
-          <p>-Smooths topography</p> 
-          <p>-Gravity differences measured by satellites</p>
-          <p>-Differences in surface heights (180 m)</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/geoid.jpg" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h2>The Oblate Spheroid</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>A close approximation of Earth's shape</p>
-          <p class="fragment fade-out">-Topography</p> 
-          <p class="fragment shrink">-Gravity Differentials</p>
-          <p class="fragment grow">-Centrifugal Force</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/OblateSpheroid.PNG" width="600"></p>
-           </div>
-      </section>
-
-       <section>
-        <h2>A Datum</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>A system to link the oblate spheroid to the geoid </p>
-          <p>-Connect the coordinates to the earth’s surface</p>
-           </div>
-          <div class="col" style="text-align: Right;">
-          <p><img src="images/datum.png" width="600"></p>
-           </div>
-      </section>
-
-       <section>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><h3>Local Datum</h3> Fits geoid very well in a particular region</p>
-          <p><img src="images/local_datum.png" width="400"></p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><h3>Global Datum</h3> Fits the geoid fairly well everywhere</p>
-          <p><img src="images/global_datum.png" width="350"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><h2>Local Datum</h2> Fits geoid very well in a particular region</p>
-          <p><img src="images/nad_geoid.png" width="550"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><h2>Global Datum</h2> Fits the geoid fairly well everywhere</p>
-          <p><img src="images/wgs_geoid.jpg" width="700"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h2>Only Minor Differences</h2>
-          <div class="col" style="text-align: center;">
-          <p>For some cases, either datum is suitable.</p>
-          <img src="images/nad_v_wgs.png" width="800">
-          </div>
-      </section>
-
       <section>
-        <h2>Only Minor Differences</h2>
-          <div class="col" style="text-align: center;">
-          <p>A local datum is better for small areas like a city.  For global maps, you <b>always</b> need a global datum. </p>
-          <img src="images/nad_v_wgs.png" width="700">
-          </div>
-      </section>
+        <div class="title">
+            <h1>Steps of Abstraction</h1>
+        </div>
+        <div class="subtitle">From the 3D Earth to 2D maps.</div>
+    </section>
 
-       <section>
-        <h2>Geographic Coordinate System (GCS)</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Spherical Coordinate System for identifying locations on the spheroid.</p>
-          <p>-All GCS are tied to a specific datum.</p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/latitude-longitude-globe-ESRI.gif" width="400"></p>
-           </div>
-         </div>
-      </section>
-
-
-
-       <section>
-        <h2>Geographic Coordinate System (GCS)</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p><b>Latitude/Longitude</b></p>
-          <ul ><!-- style="padding-left: 10px"> -->
-            <li>Fixed to the surface of spheroid</li>
-            <li>Angular distance from equator and prime meridian</li>
-            <li>Location on a 3D object with just 2 numbers</li>
-          </ul>
-          <!-- <p>Degrees of latitude and longitude are </p> -->
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/latitude-longitude-globe-ESRI.gif" width="400"></p>
-           </div>
-         </div>
-      </section>
-
-       <section>
-        <h2>Latitude</h2>
-          <img src="images/grat.gif" width="800">
-          <div class="col" style="text-align: center;">
-          <p>Distance in degrees form Equator: -90&deg;(South) to +90&deg;(North)</p>
-          </div>
-      </section>
-
-       <section>
-        <h2>Longitude</h2>
-          <img src="images/grat.gif" width="800">
-          <div class="col" style="text-align: center;">
-          <p>Distance in degrees Prime Meridian: -180&deg (West); to +180&deg; (East)</p>
-          </div>
-      </section>
-
-
-       <section>
-        <h2>Latitude/Longitude</h2>
-
-          <div class="col" style="text-align: left;">
-          <p><b>Decimal Degrees</b></p>
+    <section>
+      <div class="container">
+        <h2 class ="header">Flattening the Blue Marble</h2>
+        <div class="left">
+          <p>This is what earth looks like when you take a picture of it from 29,000 kilometers away.</p>
           <ul>
-            <li>Vancouver BC: 49.261111, -123.113889</li>
-            <li>Sydney NSW: -33.865, 151.209444</li>
+            <li>This photo is called the Blue Marble, it was taken from Apollo 17</li>
           </ul>
+        </div>
+        <div class="right">
+          <img src="images/blue_marble_og.jpg" height="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <h2 class ="header">Flattening the Blue Marble</h2>
+        <div class="left">
+          <p>This is the version that was published.</p>
+          <ul>
+            <li>NASA rotated the image 180 degrees to fit peoples expectations</li>
+          </ul>
+        </div>
+        <div class="right">
+          <img src="images/blue_marble_right_side_up.jpg" height="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Complexities of Earth</h2>
+        <div class="left">
+          <p>A lumpy ball of rock flying through space.</p>
+          <ul>
+            <li>Despite what you may have been told</li>
+            <ul>
+              <li><b>The earth isn't round!</b></li>
+            </ul>
+            <li>It has multiple distortions caused by:</li>
+            <ul>
+              <li>Topography</li> 
+              <li>Gravity Differentials</li>
+              <li>Centrifugal Force</li></ul>
+          </ul>
+        </div>
+        <div class="right">
+          <img src="images/shape.jpg" height="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Our Infinitely Complex Earth</h2>
+        <div class="left">
+          <p>Cartographers have developed strategies for dealing with these distortions:</p>
+          <ul>
+            <li class="fragment fade-out">Topography</li> 
+            <li class="fragment shrink">Gravity Differentials</li>
+            <li class="fragment grow">Centrifugal Force</li>
+          </ul>
+        </div>
+        <div class="right">
+          <img src="images/shape.jpg" height="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Ignore Topography!?</h2>
+        <div class="left">
+          <p>Topography is very localized, in most applications it isn't explicitly needed to make a map.</p>
+          <ul>
+            <li>We can account after the fact if needed</li>
+            <ul>
+              <li>Digital Elevation Models</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/DEM.png" width="100%"; style = "border:2px solid #555">
+          <p>DEM of Mt. Everest</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <h2 class ="header">Ignore Topography!?</h2>
+        <div class="left">
+          <p>Topography is very localized, in most applications it isn't explicitly needed to make a map.</p>
+          <ul>
+            <li>We can account after the fact if needed</li>
+            <ul>
+              <li>Digital Elevation Models</li>
+              <li>Contour Lines</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/Contour.png" width="85%"; style = "border:2px solid #555">
+          <p>Contour lines, Golden Ears Trail</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">The Geoid</h2>
+        <div class="left">
+          <p>A simplified model of the Earth that ignores elevation differences due to <b>topography</b>.</p>
+          <ul>
+            <li>Earths crust is not uniformly dense, causes gravity differentials to form.</li>
+            <ul>
+              <li>Differences in density cause the surface to "sink" down or "float" up</li>
+              <li>Continental scale undulations, +85 m (Iceland) to −106 m (southern India)</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/geoid_ex.jpg" width="80%"; style = "border:2px solid #555">
+          <p><b>Vertical scale exaggerated</b> to show gravity induced elevation differences.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <div class="container">
+        <h2 class ="header">The Geoid</h2>
+        <div class="left">
+          <p>A simplified model of the Earth that ignores elevation differences due to <b>topography</b>.</p>
+          <ul>
+            <li>Gravity differences measured by satellites</li>
+            <img src="images/geoid_model.png" width="80%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/geoid.jpg" width="80%"; style = "border:2px solid #555">
+          <p>The Geoid without vertical exaggeration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+          <h1 class="title">TopHat Question 1</h1>
+          <div class="question">
+              <p>The Geoid accounts for elevation differences in the Earth's crust due to</p>
+              <ul>
+                  <li>Topography</li>
+                  <li>Centrifugal force</li>
+                  <li>Density differences</li>
+                  <li>All of the above</li>
+              </ul>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">The Oblate Spheroid</h2>
+        <div class="left">
+          <p>A fairly close approximation of Earth's shape.</p>
+          <ul>
+            <li>Due to <b>Centrifugal Force</b> the earth is ~ 26 km wider at the equator</li>
+            <img src="images/centrifuge.gif" width="80%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/OblateSpheroid.jpg" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Datums</h2>
+        <div class="left">
+          <p>Fitting a spheroid to the geoid allows us to minimize elevation differences due to density differentials and account for effects of Centrifugal force, while ignoring topography.</p>
+          <ul>
+            <li>A <b>Datum</b> is the reference system we to do the fitting</li>
+            <ul>
+              <li>Can be <b>Global</b> or <b>Local</b></li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <img src="images/datum.png" width="80%"; style = "border:2px solid #555">
+          <p>Datums give us a reference point to account for distortions</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <h2 class ="header">Global Datums</h2>
+        <div class="left">
+          <p>The <b>center of the earth</b> is used as the reference point.</p>
+          <ul>
+            <li>Fits the geoid fairly well everywhere</li>
+            <img src="images/wgs_geoid.jpg" width="100%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/global_datum.png" width="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Local Datums</h2>
+        <div class="left">
+          <p><b>A point on the geoids surface</b> is used as the reference point.</p>
+          <ul>
+            <li>Fits geoid very well in <b>one</b> region</li>
+            <img src="images/nad_geoid.png" width="80%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/local_datum.png" width="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Does the Datum Matter?</h2>
+        <div class="left">
+          <p>Generally speaking:</p>
+          <ul>
+            <li>For global maps, you <b>always</b> need a global datum</li>
+            <li>A local datum is better for small areas like a city</li>
+            <ul>
+              <li>Global datums can be used, they just might shift things a bit</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/datum.png" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Does the Datum Matter?</h2>
+        <div class="left">
+          <p>Only minor differences between local and global datums in North America.</p>
+          <ul>
+            <li>For most applications ... </li>
+            <ul>
+              <li>The choice of global vs. local is not really that important</li>
+            </ul>
+            <li>For others, its <b>very important</b></li>
+            <ul>
+              <li>Aviation</li>
+              <li>Self driving cars</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/nad_v_wgs.png" width="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+          <h1 class="title">TopHat Question 2</h1>
+          <div class="question">
+              <p>A _____ datum is fixed to the center of the geoid while a _____ datum is fixed to a point on the geoid's surface.</p>
+          </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Geographic Coordinate System</h2>
+        <div class="left">
+          <p><b>Latitude/Longitude</b> is the primary Geographic Coordinate System <b>(GSC)</b> that we use to describe locations on the "the earth's surface"</p>
+          <ul>
+            <li>Location on a 3D object with just 2 numbers</li>
+            <ul>
+              <li>Fixed to the surface of spheroid</li>
+              <li><i>Not</i> the actual earth's surface</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/latitude-longitude-globe-ESRI.gif" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Latitude</h2>
+        <div class="full">
+          <p>Distance in degrees form Equator:</p>
+          <ul>
+            <li>Angular distance between center of the earth and the equator</li>
+            <li>-90&deg;(South) to +90&deg;(North)</li>
+            <li>Often called parallels</li>
+            <img src="images/grat.gif" width="80%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Longitude</h2>
+        <div class="full">
+          <p>Distance in degrees form the Prime Meridian:</p>
+          <ul>
+            <li>Angular distance between center of the earth and the prime meridian</li>
+            <li>-180&deg (West); to +180&deg; (East)</li>
+            <li>Often called meridians</li>
+            <img src="images/grat.gif" width="80%"; style = "border:2px solid #555">
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Latitude & Longitude</h2>
+        <div class="left">
+          <p>Sometimes refereed to as a graticule.</p>
           <p><b>Degrees Minutes Seconds</b></p>
           <ul>
             <li>Vancouver BC: 49&deg;15′40″N 123&deg;06′50″W</li>
             <li>Sydney NSW: 33&deg;51′54″S 151&deg;12′34″E</li>
           </ul>
-          </div>
-      </section>
-
-
-       <section>
-        <h2>An Important Caveat!</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Meridians converge!</p>
+          <p><b>Decimal Degrees</b></p>
+          <ul>
+            <li>Vancouver BC: 49.261111, -123.113889</li>
+            <li>Sydney NSW: -33.865, 151.209444</li>
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/latitude-longitude-globe-ESRI.gif" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div class="container">
+        <h2 class ="header">An Important Caveat!</h2>
+        <div class="left">
+          <p>Meridians converge at the poles!</p>
           <ul>
             <li>Distance between degrees of longitude decreases with increasing latitude</li>
+            <li>This is the central issue with projecting a map!</li>
+            <ul>
+              <li>You <b>can't</b> accurately display a Geographic Coordinate System on a 2D surface (map/screen).</li>
+            </ul>
           </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/long_boi.gif" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
 
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/long_boi.gif" width="500"></p>
-           </div>
-         </div>
-      </section>
-
-
-       <section>
-        <h2>Making a Flat Map</h2>
-        <div class="container">
-          <div class="col" style="text-align: center;"><!-- 
-          <p>Once we have a GCS, we can project it onto a 2D plane.</p>
-           </div>
-          <div class="col" style="text-align: Center;"> -->
-          <p><img src="images/proj_1.jpg" width="600"></p>
-           </div>
-         </div>
-      </section>
-
-       <section>
-        <h2>Making a Flat Map</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
+    <section>
+      <div class="container">
+        <h2 class ="header">Making a Flat Map</h2>
+        <div class="left">
           <p>Displaying Lat/Lon in 2D doesn't work well</p>
           <ul>
             <li>Causes things to look "scrunched"</li>
           </ul>
+          <img src="images/no_project.png" width="80%"; style = "border:2px solid #555">
+        </div>
+        <div class="right">
+          <p>We have to <b>Project</b> our map.</p>
+          <ul>
+            <li>Involves intentionally distorting the data to display it effectively in 2D</li>
+          </ul>
+          <img src="images/proj_1.jpg" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
 
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/no_project.png" width="500"></p>
-           </div>
-         </div>
-      </section>
+    
+    <section>
+      <div class="container">
+          <h1 class="title">TopHat Question 3</h1>
+          <div class="question">
+              <p>Lines of latitude converge at the poles.</p>
+              <ul>
+                <li>True</li>
+                <li>False</li>
+              </ul>
+          </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <h2 class ="header">Projected Coordinate Systems</h2>
+        <div class="left">
+          <p>A map projection is a mathematical transformation used to flatten a GCS.</p>
+          <ul>
+            <li>Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection</li>
+          </ul>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/proj_2.png" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
 
-       <section>
-        <h2>Making a Flat Map</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>We have to apply a projection</p>
+    <section>
+      <div class="container">
+        <h2 class ="header">Making a Flat Map</h2>
+        <div class="left">
+          <p>Applying a projection:</p>
           <ul>
             <li>Converts to linear units</li>
             <li>Allows distance/area calculations</li>
             <li>Makes things look better</li>
           </ul>
-
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/project.png" width="500"></p>
-           </div>
-         </div>
-      </section>
-
-
-       <section>
-        <h2>Projected Coordinate Systems</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>A map projection is a flattened GCS.  Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection.</p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/proj_2.png" width="400"></p>
-           </div>
-         </div>
-      </section>
+        </div>
+        <div class="figure">
+          <span class="helper"></span>
+          <img src="images/project.png" width="80%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
 
 
-       <section>
-        <h2>Steps of Abstraction</h2>
-          <img src="images/Steps of Abstraction.png" width="1000">
-      </section>
+
+    <section>
+      <div class="container">
+          <h1 class="title">TopHat Question 4</h1>
+          <div class="question">
+              <p>A Geographic Coordinate System is a mathematical transformation we apply to project the earth on a 2D plane.</p>
+              <ul>
+                <li>True</li>
+                <li>False</li>
+              </ul>
+          </div>
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="container">
+        <h2 class ="header">Steps of Abstraction</h2>
+        <div class="full" style="text-align: center">
+          
+          <span class="helper"></span>
+          <img src="images/Steps of Abstraction.png" width="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
 
 
     </div><!-- .slides -->
 
   </div><!-- .reveal -->
 
-  <!-- not needed since 3.8.0 -->
-  <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"><script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
   <script>
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
@@ -371,19 +691,15 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.03,
+      width: 1350,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2 ]
+    },
 
-      transition: 'none', // none/fade/slide/convex/concave/zoom
 
-      // Optional reveal.js plugins, loaded from jsDelivr
-      dependencies: [
-        { src: srcUrlPrefix + 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-        { src: srcUrlPrefix + 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
-        { src: srcUrlPrefix + 'plugin/zoom-js/zoom.js', async: true },
-        { src: srcUrlPrefix + 'plugin/notes/notes.js', async: true }
-      ]
-    });
+    );
   </script>
 </body>
 

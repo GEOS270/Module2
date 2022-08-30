@@ -2,7 +2,7 @@
 layout: default
 title: Steps of Abstraction
 parent: Coordinate Reference Systems
-grand_parent: Module 2
+# grand_parent: Module 2
 nav_order: 1
 ---
 

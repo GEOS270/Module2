@@ -8,7 +8,8 @@ nav_order: 1
 ---
 
 # Map Projections Tutorial
-<!-- {: .no_toc } -->
+
+**Note** This section covers **[questions 1 - 10](Assessment.md#part-1:-map-projections-tutorials)** in the module quiz.
 
 <img src="content/images/understanding-spatial-data-map-projections.jpg" width="400">
 

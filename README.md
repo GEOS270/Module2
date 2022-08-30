@@ -1,1 +1,1 @@
-# [Module1](https://geos270.github.io/Module1/)
+# [Module2](https://geos270.github.io/Module2/)

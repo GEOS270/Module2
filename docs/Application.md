@@ -15,8 +15,11 @@ Work through a tutorial on map projections to learn how to work with projections
 
 * Complete the four exercises and answer a seires of questions relating to contnet in each exercise.
 
-## 2) Make a visual comparison of four coordinate systems.
+## 2) Comparing Coordinate Systems
 
+Make a visual comparison of four different coordinate systems that can be used to represent the Canada.
+
+* Submit a map and answer a couple questions.
 
 
 
