@@ -112,8 +112,8 @@ Kyoto - 53 N
 
 ## Part 2: Comparing the Projections
 
-[**11)**](/docs/Application_Part2.md#four-ways-to-display-canada) Submit your figure showing Canada in the four different coordinate systems.
+[**11)**](/Application_Part2.md#four-ways-to-display-canada) Submit your figure showing Canada in the four different coordinate systems.
 
-[**12)**](/docs/Application_Part2.md#four-ways-to-display-canada) Write a **paragraph or two** comparing and contrasting the four different coordinate systems.  What are the differences/similarities between them?  If you wanted to make a map of population totals by province, which coordinate system(s) would you choose? What if you wanted to make a map of population **density** by province, which coordinate system(s) would you choose?
+[**12)**](/Application_Part2.md#four-ways-to-display-canada) Write a **paragraph or two** comparing and contrasting the four different coordinate systems.  What are the differences/similarities between them?  If you wanted to make a map of population totals by province, which coordinate system(s) would you choose? What if you wanted to make a map of population **density** by province, which coordinate system(s) would you choose?
 
-[**13)**](/docs/Application_Part2.md#one-way-you-cant-display-canada) Why doesn't the UTM projection work well for displaying the whole country of Canada?  Think back to what we discussed in lecture and what was presented in the tutorial.
+[**13)**](/Application_Part2.md#one-way-you-cant-display-canada) Why doesn't the UTM projection work well for displaying the whole country of Canada?  Think back to what we discussed in lecture and what was presented in the tutorial.
