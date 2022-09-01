@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- <meta charset="utf-8"> -->
+
   <title>Reveal.js template</title>
   <!-- credit https://bl.ocks.org/elipousson/f64814b1ee4aab5d83775bfbf556d35a -->
 
@@ -13,20 +15,15 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css">
-  <!-- see https://cdnjs.com/libraries/reveal.js/3.6.0 for what's available -->
-  <!-- examples: simple, beige, black, blood, league, moon, night, serif, sky, solarized, white ... -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/beige.css" id="theme">
-  <!-- see: https://cdnjs.com/libraries/highlight.js/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/ir-black.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/serif.css">
 
   <!-- Printing and PDF exports -->
   <script>
     // Load print, pdf stylesheets from jsDelivr
-    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/';
+    var srcUrlPrefix = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/';
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
@@ -35,21 +32,165 @@
   </script>
 
   <!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/html5shiv.js"></script>
     <![endif]-->
   <style>
-    body {
-      /* make it totally black */
-      background-color: black;
-    }
+    
+.container {
+  position: fixed;
+    height: 700px;
+    width: 100%;
+}
 
-    .container {
-      display: flex;
-    }
+.title{
+  position: relative;
+  top: 5%;
+}
 
-    .col {
-      flex: 1
-    }
+.subtitle{
+  position: relative;
+  top: 10%;
+}
+
+.question{
+  position: relative;
+  text-align: left;
+  top: 10%;
+}
+
+
+.header {
+  top: 1%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+}
+
+.full {
+  width: 95%;
+  top:  12%;
+  left: 0%;
+  text-align: left;
+  position: absolute; 
+}
+
+.left {
+  width: 49%;
+  height: 80%;
+  top: 12%;
+  left: 0%;
+  position: absolute;
+  text-align: left;
+}
+
+.right {
+  width: 49%;
+  top: 12%;
+  height: 80%;
+  left: 51%;
+  position: absolute;
+  text-align: left;
+}
+
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.figure {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+
+.subfigure {
+  width: 100%;
+  /* height: 100%; */
+  left: 0%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+h1 {
+  display: block;
+  font-size: 3em !important; 
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+  
+h2 {
+  display: block;
+  font-size: 1.5em !important;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.reveal a {
+  color: blue;
+}
+
+.reveal {
+  background-color: #e6f9fc;
+}
+
+ul {
+    padding-left: 0;
+    font-size: 90%;
+
+} 
+
+ol {
+  counter-reset: item;
+  font-size: 90%;
+  padding-left: 0;
+}
+
+li.nl {
+  display: block;
+}
+
+li.nl:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+ol ol li.nl::before {
+    content: counters(item, ".") " ";
+}
+
+#main img {
+    float: left;
+}
+
+.col {
+    flex: 1
+}
+
+
   </style>
 </head>
 
@@ -58,190 +199,344 @@
   <div class="reveal">
 
     <div class="slides">
-
-       <section>
-        <h2>Projected Coordinate Systems</h2>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>A map projection is a flattened GCS.  Imagine sending rays of light through the ellipsoid onto a flat surface, the resulting image is a projection.</p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/proj_2.png" width="400"></p>
-           </div>
-         </div>
-      </section>
-
-       <section>
-        <h3>How do we construct projections?</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-            <p>A GCS is projected onto a surface that can be flattened.</p>
-            <p class="fragment fade-up">Planar: A 2D flat plane</p>
-            <p class="fragment fade-up">Conic: A 2D cone</p>
-            <p class="fragment fade-up">Cylindrical: A 2D cylinder</p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/Proj_surface.png" width="400"></p>
-           </div>
-         </div>
-      </section>
-
-
-
-       <section>
-        <h3>Planar/Azimuthal</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/planar.jpg" width="800"></p>
-          <p>Simplest option but limited applicability/scope.  Usually only used for polar regions.</p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Planar/Azimuthal</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/02-Azimuthal-map.png" width="550"></p>
-           </div>
-      </section>
-
-       <section>
-        <h3>Planar/Azimuthal</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/Polar.png" width="550"></p>
-           </div>
-      </section>
-
-       <section>
-        <h3>Conic</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/conic.jpg" width="800"></p>
-          <p>Great for mid-latitudes.  Can only cover one hemisphere at a time.</p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Conic: BC Albers</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/02-BC-Albers-map.png" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Conic: Canada Lambert</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/ca_lambert.png" width="500"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-            <h3>Conic Projection vs. Latitude/Longigude</h3>
-            <p>Conic Projection - Nicely accounts for curvature of the earth.</p>
-            <p>Lat/Lon - Scruched & distorted image when displayed in 2 dimmensions.</p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/ca_lambert.jpg" width="400"></p>
-           </div>
-         </div>
-      </section>
-
-
-
-       <section>
-        <h3>Cylindrical</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/cylindrical.jpg" width="800"></p>
-          <p>Works for the full Earth (Normal).  Or applied to small slices (Transverse)</p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Cylindrical: Mercator</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/02-Mercator-map.png" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Cylindrical: Sinusoidal</h3>
-        <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><img src="images/02-Sinusoidal-map.png" width="600"></p>
-           </div>
-      </section>
-
-
-       <section>
-        <h3>Classes of Projection</h3>
-        <div class="container">
-          <div class="col" style="text-align: left;">
-          <p>Conformal: Shapes are preserved.</p>
-          <p>Equal-area: Areas is preserved.</p>
-          <p>Equidistant: Distance is preserved (*limited)</p>
-          <p>True-direction: Direction is preserved (*limited)</p>
-          <p>Compromise: Splits the difference for aesthetics</p>
-          </div>
-      </section>
-
-
-       <section>
-        <h3>Conformal Projections</h3>
-        <div class="container">
-          <div class="col" style="text-align: center;">
-          <p><img src="images/conformal.png" width="500"></p>
-          </div>
-      </section>
-
-
       <section>
-        <h3>Conformal Projections</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>No angular deformation, but area is severely distorted.</p>
-          <p>Scale changes across the map, poor for measuring distances or areas.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/lambert.jpg" width="500"></p>
-          <p>Lambert Conformal Conic</p>
-           </div>
-         </div>
-      </section>
+        <div class="title">
+            <h1>Map Projections</h1>
+        </div>
+        <div class="subtitle">Types of projections and what we use them for.</div>
+    </section>
 
-       <section>
-        <h3>Equal Area</h3>
+    <section>
+      <div class="container">
+        <h2 class ="header">Projected Coordinate Systems</h2>
+        <div class="left">
+            <p>A map projection is a transformation applied to a geographic coordinate system (GCS).</p>
+            <ul>
+                <li>Allows us to "convert" from 3D coordinates (Lat/Lon) to 2D coordinates (meters)</li>
+                <li>Why does this work?</li>
+                <ul>
+                    <li>While the GCS is a 3D coordinate system, it only references locations <b>on the surface</b> of the oblate spheroid</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="right">
+          <img src="images/proj_2.png" width="100%"; style = "border:2px solid #555">
+        </div>
+      </div>
+    </section>
+
+    <section>
         <div class="container">
-          <div class="col" style="text-align: center;">
-          <p><img src="images/equal_area.png" width="600"></p>
+          <h2 class ="header">Projection Methods</h2>
+          <div class="left">
+              <p>There are three main ways to project the 3D oblate spheroid onto a 2D plane.</p>
+              <ul>
+                  <li class="fragment fade-up" data-fragment-index="0"><b>Planar:</b> A plane is referenced to "Earth's" surface</li>
+                  <li class="fragment fade-up" data-fragment-index="1"><b>Conic:</b> A cone is referenced to "Earth's" surface</li>
+                  <ul>
+                      <li class="fragment fade-up" data-fragment-index="1">The cone must be cut to flatten it</li>
+                  </ul>
+                  <li class="fragment fade-up" data-fragment-index="2"><b>Cylindrical</b>: A cylinder is referenced to "Earth's" surface</li>
+                  <ul>
+                      <li class="fragment fade-up" data-fragment-index="2">The cylinder must be cut to flatten it</li>
+                  </ul>
+              </ul>
           </div>
-      </section>
-
-      <section>
-        <h3>Equal Area</h3>
+          <div class="figure">
+              <span class="helper"></span>
+              <img src="images/Proj_surface.png" height="100%"; style = "border:2px solid #555">
+          </div>
+        </div>
+    </section>
+      
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Preserves area but angles/shapes are deformed.</p>
-          <p>Very useful in GIS where area must be preserved for land analysis.</p>
+          <h2 class ="header">Projection Methods</h2>
+          <div class="left">
+              <p>How/where to reference the surface influences how the map is distorted.</p>
+              <ul>
+                  <li class="fragment fade-up" data-fragment-index="0"><b>Tangent:</b> when projections touch the "earth's" surface at a one point or line</li>
+                  <ul>
+                      <li class="fragment fade-up" data-fragment-index="0">Point for planar projections, line for conic and cylindrical projections</li>
+                  </ul>
+                  <li class="fragment fade-up" data-fragment-index="1"><b>Secant:</b> when projections touch the "earth's" surface along two lines</li>
+                  <ul>
+                      <li class="fragment fade-up" data-fragment-index="1">Helps minimize reduce distortion</li>
+                  </ul>
+                  <li class="fragment fade-up" data-fragment-index="2">These are the only locations on map without distortions</li>
+              </ul>
+          </div>
+          <div class="figure">
+              <span class="helper"></span>
+              <img src="images/tan_sec.gif" width="100%"; style = "border:2px solid #555">
+          </div>
+        </div>
+    </section>
+      
+
+    <section>
+        <div class="container">
+          <h2 class ="header">Planar Projections</h2>
+          <div class="full">
+            <p>Sometimes also called azimuthal or zenith projections, planar projections are the simplest approach.</p>
+            <ul>
+                <li>Limited applicability/scope and are typically only used for polar regions.</li>
+            </ul>
+            <div class="subfigure">
+                <img src="images/planar.jpg"  width="100%"; style = "border:2px solid #555">
+            </div>
            </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/lambert.jpg" width="500"></p>
-          <p>Albers Equal Area</p>
-           </div>
-         </div>
-      </section>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Planar Projections</h2>
+            <div class="left">
+                <p>The Polar Azimuthal projection, tangent to the north pole.</p>
+                <img src="images/02-Azimuthal-map.png" width="80%">
+            </div>
+            <div class="figure">
+                <img src="images/Polar.png" width="100%">
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class ="header">Conic Projections</h2>
+            <div class="full">
+            <p>Conic projections are a great option for the mid-latitudes.  They have one central meridian and one/two standard parallel(s).</p>
+            <ul>
+                <li>Can only cover one hemisphere at a time</li>
+            </ul>
+            <div class="subfigure">
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="images/conic.jpg"  width="100%"; style = "border:2px solid #555">
+                    <img class="fragment fade-in" data-fragment-index="0" src="images/conic_secant.jpg"  width="100%"; style = "border:2px solid #555">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class ="header">Conic Projections</h2>
+            <div class="left">
+                <p>The BC Environment Albers projection, secant to 50&deg; N and 58&deg; N, central meridian 126&deg; W.</p>
+                <img src="images/02-BC-Albers-map.png" width="80%">
+            </div>
+            <div class="figure">
+                <img src="images/first-nations-bc.jpg" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Conic Projections</h2>
+            <div class="left">
+                <p>Canada's "official" map projection: Canada Lambert Conformal Conic</p>
+                <ul>
+                    <img src="images/ca_lambert.png" width="80%">
+                </ul>
+            </div>
+            <div class="figure">
+                <img src="images/ca_lambert.jpg" height="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1 class="title">TopHat Question 1</h1>
+            <div class="question">
+                <p>A secant conic projection has one standard parallel while a tangent conic projection has two.</p>
+                <ul>
+                    <li>True</li>
+                    <li>False</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Cylindrical Projections</h2>
+            <div class="full">
+            <p>The only method that works (well) for displaying the full Earth.</p>
+            <div class="subfigure">
+                <img src="images/cylindrical.jpg"  width="95%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class ="header">Cylindrical Projections</h2>
+            <div class="left">
+                <p>The Mercator projection, tangent to 0&deg; N and, central meridian 0&deg; W.</p>
+                <ul>
+                    <img src="images/mercator-vs-truesize.png" width="100%"; style = "border:2px solid #555">
+                </ul>
+            </div>
+            <div class="figure">
+                <span class="helper"></span>
+                <img src="images/02-Mercator-map.png" height="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Cylindrical Projections</h2>
+            <div class="left">
+                <p>Transverse Mercator projections are better suited for small areas.</p>
+                <img src="images/utm_1.png" height="80%"; style = "border:2px solid #555">
+            </div>
+            <div class="r-stack">
+                <div class="figure fragment fade-out" data-fragment-index="0">
+                     <img  src="images/02-UTM-13N-map.png" height="100%">
+                </div>
+                <div class="figure fragment fade-in" data-fragment-index="0">
+                     <img src="images/footprint_class.jpg" height="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Pseudocylindrical Projections</h2>
+            <div class="left">
+                <p>Some special projections apply more complex transformations.</p>
+                <img src="images/02-Sinusoidal-map.png" height="80%">
+            </div>
+            <div class="right">
+                <p>These tend to be used less frequently.</p>
+                <ul>
+                    <li>Won't be used in this class</li>
+                </ul>
+                <img src="images/Sinusoidal.jpg" width="100%" ; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h1 class="title">TopHat Question 2</h1>
+            <div class="question">
+                <p>Which of the three methods for projecting spatial data are best for global scale maps? (select all that apply)</p>
+                <ul>
+                    <li>Cylindrical</li>
+                    <li>Conic</li>
+                    <li>Planar</li>
+                    <li>Azimuthal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Types of Projections</h2>
+            <div class="full">
+                <p>All map projections must induce distortions in order to display the 3D earth in 2D.  But the projections can be designed to </p>
+                <ul>
+                    <li class="fragment fade-in" data-fragment-index="0"><b>Conformal</b>: Shapes are preserved</li>
+                    <li class="fragment fade-in" data-fragment-index="1"><b>Equal-area</b>: Areas is preserved</li>
+                    <li class="fragment fade-in" data-fragment-index="2"><b>Equidistant</b>: Distance is preserved</li>
+                    <ul>
+                        <li class="fragment fade-in" data-fragment-index="2">*Not "globally", limited applicability</li>
+                    </ul>
+                    <li class="fragment fade-in" data-fragment-index="3"><b>True-direction</b>: Direction is preserved</li>
+                    <ul>
+                        <li class="fragment fade-in" data-fragment-index="3">*Not "globally", limited applicability</li>
+                    </ul>
+                    <li class="fragment fade-in" data-fragment-index="4"><b>Compromise</b>: Splits the difference for aesthetics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Conformal Projections</h2>
+            <div class="left">
+                <p>These projections are designed to maintain the shapes/angles across the map.</p>
+                <ul>
+                    <li>The mercator projection is a good example</li>
+                    <ul>
+                        <li>Because it maintains shape/angles, it can be used to circumnavigate the globe in a sailboat</li>
+                        <li>But to maintain shape globally, it must <b>severely</b> distort area</li>
+                        <li>Scale changes across the map, poor for measuring distances or areas</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/conformal.png" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Conformal Projections</h2>
+            <div class="left">
+                <p>These projections are designed to maintain the shapes/angles across the map.</p>
+                <ul>
+                    <li>The lambert conformal conic projection is also a good example</li>
+                    <ul>
+                        <li>Because it is a conic projection showing a smaller region and it uses secant lines, areal distortions are less obvious/drastic</li>
+                        <li>However, the area calculations are not true to reality</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/lambert.jpg" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Equal Area Projections</h2>
+            <div class="left">
+                <p>These projections are designed to Preserves area.</p>
+                <ul>
+                    <li>The gall peters projection is a good example</li>
+                    <ul>
+                        <li>Because it maintains area, it can be used to calculate population density</li>
+                        <li>Very useful in GIS where area must be preserved for land analysis</li>
+                        <li>Angles/shapes are deformed so it "looks" weird</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/equal_area.png" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Equal Area Projections</h2>
+            <div class="left">
+                <p>These projections are designed to Preserves area.</p>
+                <ul>
+                    <li>The albers equal area projection is also a good example</li>
+                    <ul>
+                        <li>Because it is a conic projection showing a smaller region and it uses secant lines, shape/angle distortions are less obvious/drastic</li>
+                        <li>You can still see it, especially in the north</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/albers.jpg" width="100%">
+            </div>
+        </div>
+    </section>
+    
+    
 
       <section>
         <h3>Universal Transverse Mercator</h3>
@@ -494,9 +789,10 @@
 
   </div><!-- .reveal -->
 
-  <!-- not needed since 3.8.0 -->
-  <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"><script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/math/math.min.js"></script>
+
   <script>
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
@@ -507,19 +803,15 @@
       center: true,
       overview: false,
       loop: false,
+      margin: 0.03,
+      width: 1350,
+      height: 700,
+      transition: 'none',
+      plugins: [ RevealMath.MathJax2 ]
+    },
 
-      transition: 'none', // none/fade/slide/convex/concave/zoom
 
-      // Optional reveal.js plugins, loaded from jsDelivr
-      dependencies: [
-        { src: srcUrlPrefix + 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-        { src: srcUrlPrefix + 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: srcUrlPrefix + 'plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
-        { src: srcUrlPrefix + 'plugin/zoom-js/zoom.js', async: true },
-        { src: srcUrlPrefix + 'plugin/notes/notes.js', async: true }
-      ]
-    });
+    );
   </script>
 </body>
 
