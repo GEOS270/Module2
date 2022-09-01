@@ -64,7 +64,7 @@ Map/charts/figures will be evaluated for completeness and aesthetics.
 * 10 N
 * 18 N
 
-[**4)**] Use the [What UTM Zone am I in?](https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-#) tool match find the UTM zones for these cities:
+**4)** Use the [What UTM Zone am I in?](https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-#) tool match find the UTM zones for these cities:
 
 - Inuvik, NWT, Canada
 - Cape Town, South Africa
