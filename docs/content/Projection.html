@@ -203,7 +203,7 @@ ol ol li.nl::before {
         <div class="title">
             <h1>Map Projections</h1>
         </div>
-        <div class="subtitle">Types of projections and what we use them for.</div>
+        <div class="subtitle">Taking the 3D Earth and displaying it on a 2D surface: <br> Types of projections and what we use them for.</div>
     </section>
 
     <section>
@@ -390,15 +390,18 @@ ol ol li.nl::before {
         <div class="container">
             <h2 class ="header">Cylindrical Projections</h2>
             <div class="left">
-                <p>Transverse Mercator projections are better suited for small areas.</p>
-                <img src="images/utm_1.png" height="80%"; style = "border:2px solid #555">
+                <p>Transverse cylinders projections are also frequently used.</p>
+                <ul>
+                    <li>Minimize distortion near secant lines</li>
+                    <img src="images/utm_3.png" width="100%"; style = "border:2px solid #555">
+                </ul>
             </div>
             <div class="r-stack">
                 <div class="figure fragment fade-out" data-fragment-index="0">
                      <img  src="images/02-UTM-13N-map.png" height="100%">
                 </div>
                 <div class="figure fragment fade-in" data-fragment-index="0">
-                     <img src="images/footprint_class.jpg" height="100%">
+                     <img src="images/DeltaMap.png" height="100%">
                 </div>
             </div>
         </div>
@@ -436,21 +439,95 @@ ol ol li.nl::before {
         </div>
     </section>
 
+    
+    <section>
+        <div class="container">
+            <h2 class ="header">Types of Deformations</h2>
+            <div class="full">
+                <p>All map projections must induce distortions in order to display the 3D earth in 2D, they can cause different distortions in different ways:</p>
+                <ul>
+                    <li class="fragment fade-in" data-fragment-index="0"><b>Tearing</b>: All projections have tearing (edges)</li>
+                    <li class="fragment fade-in" data-fragment-index="1"><b>Shearing</b>: Shapes and angles are contorted</li>
+                    <li class="fragment fade-in" data-fragment-index="2"><b>Compression</b>: Changes to area</li>
+                    <ul>
+                        <li class="fragment fade-in" data-fragment-index="2">Bit of a misnomer, often results in expansion</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2 class ="header">Tearing</h2>
+            <div class="full">
+                <p>All projections require tearing, some projections have more than others.</p>
+                <p style="text-align: center">
+                    <img src="images/Mollewide.png" width="70%" ; style = "border:2px solid #555">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Shearing</h2>
+            <div class="full">
+                <p>Shapes and angles are contorted by some, but not all projections.</p>
+                <div class="r-stack">
+                    <img class ="fragment fade-out" data-fragment-index="0"  src="images/Sinusoidal.jpg" width="75%" ; style = "border:2px solid #555">
+                    <p class ="fragment fade-in" data-fragment-index="0" style="text-align: center">
+                        <img src="images/Gall–Peters_projection_SW.jpg" width="60%" ; style = "border:2px solid #555">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Compression</h2>
+            <div class="left">
+                <p>Areas can be "inflated" or "deflated" some, but not all projections.</p>
+                <ul>
+                    <li>This can cause <b>serious</b> issues when you are trying to calculate statistics dependent upon area!</li>
+                    <li>Population density is a good example</li>
+                    <ul>
+                        <li>You will get hands on experience with this issue in <a href="https://geos270.github.io/Module2/">Lab</a></li>
+                    </ul>
+                </ul>
+            </div>
+                
+            <div class="r-stack">
+                <div class="figure fragment fade-out" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img   src="images/compression.jpg" width="100%" ; style = "border:2px solid #555">
+                </div>
+                <div class="figure fragment fade-in" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img src="images/mercator-vs-truesize.png" width="100%" ; style = "border:2px solid #555">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section>
         <div class="container">
             <h2 class ="header">Types of Projections</h2>
             <div class="full">
-                <p>All map projections must induce distortions in order to display the 3D earth in 2D.  But the projections can be designed to </p>
+                <p>All map projections must induce distortions in order to display the 3D earth in 2D.  But there are different types of projections that are designed to preserve some attributes.</p>
                 <ul>
-                    <li class="fragment fade-in" data-fragment-index="0"><b>Conformal</b>: Shapes are preserved</li>
-                    <li class="fragment fade-in" data-fragment-index="1"><b>Equal-area</b>: Areas is preserved</li>
+                    <li class="fragment fade-in" data-fragment-index="0"><b>Conformal</b>: Shapes and angles are preserved, i.e. they <b>prevent shearing</b></li>
+                    <li class="fragment fade-in" data-fragment-index="1"><b>Equal-area</b>: Areas is preserved, i.e. they <b>prevent compression</b></li>
                     <li class="fragment fade-in" data-fragment-index="2"><b>Equidistant</b>: Distance is preserved</li>
                     <ul>
-                        <li class="fragment fade-in" data-fragment-index="2">*Not "globally", limited applicability</li>
+                        <li class="fragment fade-in" data-fragment-index="2"><i>Not "globally"</i>, only in certain regions, ie. the tangent/secant lines</li>
                     </ul>
-                    <li class="fragment fade-in" data-fragment-index="3"><b>True-direction</b>: Direction is preserved</li>
+                    <li class="fragment fade-in" data-fragment-index="3"><b>True-direction</b>: Gives shortest route between points (great circle)</li>
                     <ul>
-                        <li class="fragment fade-in" data-fragment-index="3">*Not "globally", limited applicability</li>
+                        <li class="fragment fade-in" data-fragment-index="3"><i>Not "globally"</i>, only certain paths, ie. outward from the center of an azimuthal projection</li>
                     </ul>
                     <li class="fragment fade-in" data-fragment-index="4"><b>Compromise</b>: Splits the difference for aesthetics</li>
                 </ul>
@@ -499,9 +576,43 @@ ol ol li.nl::before {
 
     <section>
         <div class="container">
+            <h2 class ="header">Universal Transverse Mercator (UTM)</h2>
+            <div class="left">
+                <p>Globe is divided into 60 strips 6&deg; wide, spanning 80&deg;N to 80&deg;S.</p>
+                <ul>
+                    <li>Minimal distortion within zones</li>
+                    <img src="images/utm_1.png" height="80%"; style = "border:2px solid #555">
+                </ul>
+            </div>
+            <div class="right">
+                <p>A special type of conformal projection.</p>
+                <ul>
+                    <li>Only used for "small" areas</li>
+                    <img src="images/utm_2.png" width="100%"; style = "border:2px solid #555">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">UTM Zones</h2>
+            <div class="left">
+                <p>Vancouver is in UTM Zone 10N.</p>
+                <img src="images/FinalMap.png" height="80%"; style = "border:2px solid #555">
+            </div>
+            <div class="figure">
+                <p>The Mackenzie Delta, UTM Zone 8N.</p>
+                <img src="images/DeltaMap.png" height="80%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
             <h2 class ="header">Equal Area Projections</h2>
             <div class="left">
-                <p>These projections are designed to Preserves area.</p>
+                <p>These projections are designed to preserves area.</p>
                 <ul>
                     <li>The gall peters projection is a good example</li>
                     <ul>
@@ -521,7 +632,7 @@ ol ol li.nl::before {
         <div class="container">
             <h2 class ="header">Equal Area Projections</h2>
             <div class="left">
-                <p>These projections are designed to Preserves area.</p>
+                <p>These projections are designed to preserves area.</p>
                 <ul>
                     <li>The albers equal area projection is also a good example</li>
                     <ul>
@@ -535,253 +646,240 @@ ol ol li.nl::before {
             </div>
         </div>
     </section>
-    
-    
 
-      <section>
-        <h3>Universal Transverse Mercator</h3>
+
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Globe is divided into strips 6 degrees wide.  Zones span from 80N to 80S.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/utm_1.png" width="500"></p>
-           </div>
-         </div>
-      </section>
-
-      <section>
-        <h3>Universal Transverse Mercator</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Each zone is projected on a transverse cylinder.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/utm_3.png" width="500"></p>
-           </div>
-         </div>
-      </section>
-
-      <section>
-        <h3>Universal Transverse Mercator (UTM)</h3>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Little distortion within zones – great for mapping small areas.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/utm_2.png" width="500"></p>
-           </div>
-         </div>
-      </section>
-
-       <section>
-        <div class="container">
-          <div class="col" style="text-align: Left;">
-           <h3>UTM Zone 8</h3>
-          <p>Macknezie River Delta: a long, narrow feature</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/DeltaMap.png" width="380"></p>
-           </div>
-         </div>
-      </section>
-
-
-       <section>
-           <h3>UTM Zone 10</h3>
-        <div class="container">
-          <div class="col" style="text-align: center;">
-           <!-- </div> -->
-          <!-- <div class="col" style="text-align: center;"> -->
-          <p><img src="images/FinalMap_Mod2.png" width="500"></p>
-          <p>City of Vancouver: a small area</p>
-           <!-- </div> -->
-         </div>
-      </section>
-
-       <section>
-        <h3>Tearing: All projections have tearing (edges)</h3>
-          <img src="images/Mollewide.png" width="900">
-      </section>
-
-
-       <section>
-        <h3>Shearing - Shapes/angles contorted</h3>
-          <img src="images/Sinusoidal.jpg" width="900">
-          
-      </section>
-
-      <section>
-        <h3>Compression: Changes to area</h3>
-        <div class="container">
-          <div class="col" style="text-align: center;">
-           <!-- </div>
-          <div class="col" style="text-align: center;">
- -->          <img src="images/compression.jpg" width="550">
-           </div>
-         </div>
-      </section>
-
-      <section>
-        <h3>Compression: Changes to area</h3>
-        <div class="container">
-          <div class="col" style="text-align: center;">
-           <!-- </div>
-          <div class="col" style="text-align: center;">
- -->          <img src="images/mercator-vs-truesize.png" width="650">
-          <!-- <p></p> -->
-           </div>
-         </div>
-      </section>
-
-
-
-       <section>
-        <h3>Compromise</h3>
-          <img src="images/Winkel.jpg" width="700">
-          <p>Strikes a balance between for aesthetics.</p>
-      </section>
-
-
-       <section>
-        <h2>What projection is right for my map?</h2>
-
-          <div class="col" style="text-align: left;">
-          <p>There isn't a "correct" answer here, but there are definitely wrong answers.  You can typically get similar results with a handful of different projections, depending on your application.</p>
+            <h2 class ="header">Equidistant Projections</h2>
+            <div class="left">
+                <p>These projections are designed to preserves distance.</p>
+                <ul>
+                    <li>Distance <b>cannot</b> be preserved globally, only specific locations</li>
+                    <ul>
+                        <li>e.g. lines radiating from center of an azimuthal projection</li>
+                        <li>e.g. lines of longitude + central meridian of sinusoidal projection</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="r-stack">
+                <div class="figure fragment fade-out" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img src="images/Equidistant_Azimuthal.png" width="100%"; style = "border:2px solid #555">
+                </div>
+                <div class="figure fragment current-visible" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img src="images/Polar.png" width="100%"; style = "border:2px solid #555">
+                </div>
+                <div class="figure fragment fade-in" data-fragment-index="1">
+                    <span class="helper"></span>
+                    <img src="images/Sinusoidal.jpg" width="100%"; style = "border:2px solid #555">
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section>
-        <h3>Things to Think About</h3>
+    
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Where do the data come from?</p>
-          <ul>
-            <li>Some organizations use a standard projection</li>
-            <li>Stats Canada: Lambert Conformal Conic</li>
+            <h2 class ="header">True-direction Projections</h2>
+            <div class="left">
+                <p>These projections are designed to preserves direction.</p>
+                <ul>
+                    <li>Direction <b>cannot</b> be preserved globally, only specific locations</li>
+                    <ul>
+                        <li>e.g. lines radiating from center of an azimuthal projection</li>
+                        <li>Often, equidistant are also true direction but not always</li>
+                        <li>Will give us a "great circle" route, the shortest distance between two locations</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="r-stack">
+                <div class="figure fragment fade-out" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img src="images/Equidistant_Azimuthal.png" width="100%"; style = "border:2px solid #555">
+                </div>
+                <div class="figure fragment fade-in" data-fragment-index="0">
+                    <span class="helper"></span>
+                    <img src="images/GreatCircle.jpeg" width="100%"; style = "border:2px solid #555">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Compromise Projections</h2>
+            <div class="left">
+                <p>These projections are designed for aesthetics.</p>
+                <img src="images/Winkel.jpg" width="100%"; style = "border:2px solid #555">
+            </div>
+            <div class="right">
+                <p>Minimize distortion without preserving any one property.</p>
+                <img src="images/Winkel_dist.png" width="100%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h1 class="title">TopHat Question 3</h1>
+            <div class="question">
+                <p>A conformal projection will maintain which properties? (select all that apply)</p>
+                <ul>
+                    <li>Area</li>
+                    <li>Shape</li>
+                    <li>Distance</li>
+                    <li>Angles</li>
+                    <li>Direction</li>
+                    <li>All of the above</li>
+                    <li>None of the above</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class ="header">What projection is right for my map?</h2>
+            <div class="full">
+                <p>There isn't a "correct" answer here, but there are definitely wrong answers.</p>
+                <ul>
+                    <li>You can typically get similar results with a handful of different projections, depending on your application</li>
+                    <li>Best practice is to <b>always</b> use an equal area projection to calculate areas/densities</li>
+                    <ul>
+                        <li>But there are many different equal area projections</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h2 class ="header">Things to Think About</h2>
+            <div class="left" >
+                <p>Where do the data come from?</p>
+                <ul>
+                    <li>Some organizations use a standard projection</li>
+                    <ul>
+                        <li>Stats Canada: Lambert Conformal Conic</li>
+                        <li>British Columbia: BC Environment Albers</li>                    
+                    </ul>
+                </ul>
+        </div>
+        <div class="right" >
+            <p>What is the map's purpose?</p>
+            <ul>
+                <li>Conformal/compromise are aesthetically pleasing.</li>
+                <li>Navigational maps, use conformal, equidistant, etc.</li>
+                <li>Thematic maps (areas/densities) use equal area.</li>
           </ul>
-           </div>
-          <div class="col" style="text-align: Left;">
-          <p>What is the map's purpose?</p>
-          <ul>
-            <li>Conformal/compromise are aesthetically pleasing.</li>
-            <li>Navigational maps, use conformal, equidistant, etc.</li>
-            <li>Thematic map (densities) use equal area.</li>
-          </ul>
-         </div>
-      </section>
+        </div>
+    </section>
 
-
-      <section>
-        <h2>Scale</h2>
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>The relationship between distance on a map to distance in the real world.</p>
-          <p>How much smaller than reality is the map?</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/scale_1.png" width="400"></p>
-           </div>
-         </div>
-      </section>
+            <h2 class ="header">Map Scale</h2>
+            <div class="left">
+                <p>The relationship between distance on a map to distance in the real world.</p>
+                <ul>
+                    <li>How much smaller is a unit on the map than a unit on the earth?</li>
+                    <ul>
+                        <li>i.e. 1 cm on the map = 1 km on the Earth</li>
+                    </ul>
+                    <li>Can be described:</li>
+                    <ul>
+                        <li>Graphically</li>
+                        <li>Verbally</li>
+                        <li>Representative fraction</li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/scale_1.png" width="100%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
 
-
-
-       <section>
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><h3> Small Scale</h3> Zoomed out, large area, more generalization, less detail.</p>
-          <p><img src="images/small_scale.png" width="400"></p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><h3> Large Scale</h3> Zoomed in, small area, more detail, less generalization.</p>
-          <p><img src="images/large_scale.png" width="400"></p>
-           </div>
-      </section>
+            <h2 class ="header">Map Scale</h2>
+            <div class="left">
+                <p><b> Small Scale</b> Zoomed out, large area, more generalization, less detail.</p>
+                <img src="images/small_scale.png" width="70%"; style = "border:2px solid #555">
+            </div>
+            <div class="right">
+                <p><b> Large Scale</b> Zoomed in, small area, more detail, less generalization.</p>
+                <img src="images/large_scale.png" width="70%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
 
-
-       <section>
-        <!-- <h3>Types of Datums</h3> -->
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Center;">
-          <p><h3> Small Scale 1:10,000,000</h3></p>
-          <p>1/10,000,000 = 0.0000001</p>
-          <p><img src="images/small_scale.png" width="400"></p>
-           </div>
-          <div class="col" style="text-align: Center;">
-          <p><h3> Large Scale 1:1,000</h3></p>
-          <p>1/1,000 = 0.001</p>
-          <p><img src="images/large_scale.png" width="400"></p>
-           </div>
-      </section>
-
-
-      <section>
-        <h2>Scale</h2>
+            <h2 class ="header">Map Scale</h2>
+            <div class="left">
+                <p><b> Small Scale</b> 1:10,000,000 <br>1/10,000,000 = 0.0000001</p>
+                <img src="images/small_scale.png" width="70%"; style = "border:2px solid #555">
+            </div>
+            <div class="right">
+                <p><b> Large Scale</b> 1:1,000 <br>1/1,000 = 0.001</p>
+                <img src="images/large_scale.png" width="70%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
+    
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>All maps require simplification of real world features, amount depends on map scale:</p> 
-          <p>-Smaller scale maps require more generalization.</p>
-          <p>-Larger scale maps can include more detail.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <p><img src="images/scale_general.png" width="400"></p>
-           </div>
-         </div>
-      </section>
+            <h2 class ="header">Map Scale</h2>
+            <div class="left">
+                <p>All maps require simplification of real world features.  The degree of simplification is a function of the map's scale.</p> 
+                <ul>
+                    <li>Smaller scale maps require more generalization.</li>
+                    <li>Larger scale maps can include more detail.</li>
+                </ul>
+            </div>
+            <div class="right">
+                <img src="images/scale_general.png" width="100%"; style = "border:2px solid #555">
+            </div>
+        </div>
+    </section>
 
-
-      <section>
-        <h2>Scale & Projection</h2>
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>Map scale will impact our choice of projection.</p>
-          <p>Projections that work at 1:000 aren't necessarily suited for a 1:10,000,000 map.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <div style="overflow: hidden;
-            padding-top: 56.25%;
-            position: relative">
-            <iframe src="Web_Mercator_Iqualuit.html" title="Processes" scrolling="no" frameborder="0"
-              style="border: 0;
-             height: 100%;
-             left: 0;
-             position: absolute;
-             top: 0;
-             width: 100%;">
-             <p>Your browser does not support iframes.</p>
-           </iframe>
-          </div>
+            <h2 class ="header">Map Scale & Projection</h2>
+            <div class="left">
+                <p>Map scale will impact our choice of projection.</p>
+                <ul>
+                    <li>Projections that work at 1:000 aren't necessarily suited for a 1:10,000,000 map</li>
+                    <li>With conformal projections like the Mercator, scale changes with position on the map</li>
+                    <ul>
+                        <li>Preserves scale "locally"</li>
+                        <li>Scale is grossly distorted globally</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="figure">
+                <iframe src="Web_Mercator_Iqualuit.html" title="Processes" scrolling="no" frameborder="0"
+                style="border: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-           </div>
-         </div>
-      </section>
-
-
-      <section>
-        <h2>Scale & Projection</h2>
+    <section>
         <div class="container">
-          <div class="col" style="text-align: Left;">
-          <p>With conformal projections like the Mercator, scale changes with position on the map.</p>
-           </div>
-          <div class="col" style="text-align: center;">
-          <div style="overflow: hidden;
-            padding-top: 56.25%;
-            position: relative">
-            <iframe src="Web_Mercator.html" title="Processes" scrolling="no" frameborder="0"
-              style="border: 0;
-             height: 100%;
-             left: 0;
-             position: absolute;
-             top: 0;
-             width: 100%;">
-             <p>Your browser does not support iframes.</p>
-           </iframe>
-          </div>
-
-           </div>
-         </div>
-      </section>
+            <h1 class="title">TopHat Question 4</h1>
+            <div class="question">
+                <p>A large scale map shows a _____ area of the earth and small scale map shows a _____ area of the earth.</p>
+            </div>
+        </div>
+    </section>
 
 
 
