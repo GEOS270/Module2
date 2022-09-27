@@ -1,13 +1,18 @@
 ---
 layout: default
-title: Choosing a Projection
+title: Additional Resources
 parent: Coordinate Reference Systems
 # grand_parent: Module 2
 nav_order: 3
 ---
 
+# Additional Resources
 
-# Choosing a Projection
+## Open Geomatics Textbook
+
+[Chapter 2](https://www.opengeomatics.ca/mapping-data.html#geodetic-vertical-datums) of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is.  It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model.
+
+## Choosing a Projection
 
 Here is a simple summary to help you think though which class of map projection you might want to use.  Categories in **bold** are the most common classes we use.
 
@@ -19,3 +24,7 @@ Here is a simple summary to help you think though which class of map projection 
 | True Direction | All directions are true from a single specified point (usually the center) to all other points on the map | Navigation and route planning maps |
 | **Compromise** | No point is completely distortion free; distortion is minimized near the center and along the equator | World maps |
 
+
+### Choosing a Projection: Flowchart
+
+... Coming soon
