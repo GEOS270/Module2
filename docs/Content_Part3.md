@@ -27,4 +27,4 @@ Here is a simple summary to help you think though which class of map projection 
 
 ### Choosing a Projection: Flowchart
 
-... Coming soon
+<img src="content/images/ProjectionChoice.png" width="100%" style = "border:1px solid black">

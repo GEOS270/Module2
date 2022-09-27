@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Thursday, September 22, 2022 1:01:03 PM</msg><msg code="0" type="50">Failed to convert: CAN_webMercator. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: C:\Users\User\GEOS270\Modules\2\Data\Projections_Example\Projections_Example.gdb\BC_Albers\CAN_webMercator exists within geodatabase as C:\Users\User\GEOS270\Modules\2\Data\Projections_Example\Projections_Example.gdb\CAN_webMercator. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="50">Failed to convert: CAN_lambert. Failed to execute. Parameters are not valid.
+ERROR 002852: Output Feature Class: C:\Users\User\GEOS270\Modules\2\Data\Projections_Example\Projections_Example.gdb\BC_Albers\CAN_lambert exists within geodatabase as C:\Users\User\GEOS270\Modules\2\Data\Projections_Example\Projections_Example.gdb\CAN_lambert. A feature class name can only exist once within a geodatabase, including within all feature datasets.
+Failed to execute (CopyFeatures).
+</msg><msg code="0" type="3">Succeeded at Thursday, September 22, 2022 1:01:11 PM (Elapsed Time: 7.64 seconds)</msg></messages>
