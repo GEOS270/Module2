@@ -9,7 +9,7 @@ nav_order: 1
 
 # Steps of Abstraction
 
-The Earth is a lumpy ball of rock in space.  It is far too complicated to represent fully.  We need to create abstractions to simplify the shape of the earth so we can map it in 2D.  
+The Earth is a lumpy ball of rock careening through space.  It is far too complicated to represent fully; [you can't view more than half of the 3D earth at once when viewing it on a 2D plane](https://earth.google.com/web/@36.52273887,-99.26765628,-16448.90405368a,22268202.74494887d,35y,-0h,0t,0r).  We need to create abstractions to simplify the shape of the earth so we can map it in 2D. 
 
 
 <div style="overflow: hidden;
