@@ -25,5 +25,3 @@ There are many differnt types of Map Projections.  They are classified by how th
 </div>
 <a href="content/Projection.html" target="_blank">View slides in new tab</a>
 
-
-Download the slides as a .pdf [here](https://raw.githubusercontent.com/June-Skeeter/Module1_GEOS270/main/docs/content/Projection.pdf)

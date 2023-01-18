@@ -10,7 +10,7 @@ nav_order: 3
 
 ## Open Geomatics Textbook
 
-[Chapter 2](https://www.opengeomatics.ca/mapping-data.html#geodetic-vertical-datums) of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is.  It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model.
+[Chapter 2](https://www.opengeomatics.ca/mapping-data.html) of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is.  It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model.
 
 ## Choosing a Projection
 
