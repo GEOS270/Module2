@@ -29,19 +29,5 @@ The Earth is a lumpy ball of rock careening through space.  It is far too compli
 
 # Visualizing the Geoid
 
-This tool allows you to explore a 3D model of the geoid and compare it to the more simplified spheroid.
-
-<div style="overflow: hidden;
-  padding-top: 56.25%;
-  position: relative">
-  <iframe src="http://oergeomatics-geodesy-viz.s3-website.ca-central-1.amazonaws.com/" title="Processes" scrolling="no" frameborder="0"
-    style="border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;">
-   <p>Your browser does not support iframes.</p>
- </iframe>
-</div>
-<a href="http://oergeomatics-geodesy-viz.s3-website.ca-central-1.amazonaws.com/" target="_blank">View slides in new tab</a>
+This [tool](http://oergeomatics-geodesy-viz.s3-website.ca-central-1.amazonaws.com/) allows you to explore a 3D model of the geoid and compare it to the more simplified spheroid.
+* Don't get lost in the weeds trying to figure it out, but it could help refine your conceptual model.
