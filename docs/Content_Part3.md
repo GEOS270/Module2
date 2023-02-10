@@ -12,6 +12,13 @@ nav_order: 3
 
 [Chapter 2](https://www.opengeomatics.ca/mapping-data.html) of this open source geomatics textbook gives an overview of how we create map projections, including different types of datums and an in depth explanation of what the geoid is.  It is a bit beyond the scope of this course, and nothing from this book will be on the exam (unless it was covered elsewhere in lecture), but it can serve as a helpful resource for building your conceptual model.
 
+## More About Datums
+
+DJI (the drone company) has put together a helpful resource on datums that can be found [here](https://enterprise-insights.dji.com/blog/what-is-datum-in-surveying)
+
+<img src="content/images/Geoid_and_Datum_dji.jpg" width="100%" style = "border:1px solid black">
+
+
 ## Choosing a Projection
 
 Here is a simple summary to help you think though which class of map projection you might want to use.  Categories in **bold** are the most common classes we use.
